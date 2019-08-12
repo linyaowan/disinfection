@@ -1,0 +1,8 @@
+<!--pages/shareMessage/sharemessage.wxml-->
+<view class="container"> 
+  <view class='mask'>
+    <image src='../../images/forward.png' class='forward'></image>
+  </view>
+</view>   
+
+ 

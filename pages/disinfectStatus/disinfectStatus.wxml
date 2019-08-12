@@ -1,0 +1,18 @@
+<!--pages/disinfectStatus/disinfectStatus.wxml-->
+<view class="container">
+  <view class='pay-success' wx:if="{{isSuccess==1}}">
+    <image class='order-img' src="../../images/yes.png"></image>
+    <view class='order-msg'>
+      <text >{{msg}}</text>
+    </view>
+  </view>
+  <view class='pay-success' wx:if="{{isSuccess==0}}">
+    <image class='order-img' src="../../images/close.png"></image>
+    <view class='order-msg'>
+      <text >{{msg}}</text>
+    </view>
+  </view>
+</view>
+<loading hidden="{{loadingHidden}}">
+        加载中...
+</loading>

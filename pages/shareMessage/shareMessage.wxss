@@ -1,0 +1,15 @@
+/* pages/shareMessage/sharemessage.wxss */
+.mask{
+  position: fixed;
+  width: 100%;
+  height: 100VH;
+  top: 0px;
+  left: 0px;
+  background:rgba(0,0,0,0.3)
+}
+.forward{
+  display: block;
+  width: 594rpx;
+  margin: 20rpx auto;
+
+}

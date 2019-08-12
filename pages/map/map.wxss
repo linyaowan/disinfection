@@ -1,0 +1,4 @@
+/* pages/map/map.wxss */
+.page-body-text-location{
+  display: none;
+}

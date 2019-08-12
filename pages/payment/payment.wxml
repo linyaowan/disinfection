@@ -1,0 +1,33 @@
+<!--pages/payment/payment.wxml-->
+<view class="container">
+  <view class='pay-success' wx:if="{{payStatus==1}}">
+    <image class='order-img' src="../../images/success.png"></image>
+    <view class='order-msg'>
+      <text class='price'>￥0.01</text>
+      <text >支付成功</text>
+    </view>
+    <view class='success-text'>请放置好图书，轻关柜门，欢迎下次使用！</view>
+    <button bindtap="startDisinfect" class='startDisinfect' loading="{{loading}}">开始消毒</button>
+  </view>
+  <view class='pay-wait' wx:elif="{{payStatus==0}}">
+    <image class='order-img' src="../../images/info.png"></image>
+    <view class='order-msg'>支付未完成</view>
+    <view class='pay-info'>
+      <text>图书消毒：  1次</text>
+      <view>
+        <text>应付：</text>
+        <text class='price'>￥0.01</text>
+      </view>
+    </view>
+    <view class='pay-tip'>温馨提示：请在30分钟内完成支付，若未支付订单将自动关闭！</view>
+    <view class='btn-group'>
+      <button class='order-cancel' bindtap="orderCancel">取消订单</button>
+      <button class='pay-for' bindtap="requestPayment" loading="{{loading}}">继续支付</button>
+    </view>
+  </view>
+  <view class='pay-closed' wx:else>
+    <image class='order-img' src="../../images/close.png"></image>
+    <view class='order-msg'>订单已关闭</view>
+    <view class='pay-tip'>支付已超时，订单已自动关闭，请重新下单！</view>
+  </view>
+</view>

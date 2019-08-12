@@ -1,0 +1,19 @@
+<!--pages/login/login.wxml-->
+<view class="container" wx:if="{{hasInfo}}" >
+  <view class='login'>
+    <view class='get-info' >
+    <image src='../../images/info.png' class='logo'></image>
+    <view class='get-title'>授权XXXXX获取以下权限为您服务</view>
+    <view class='get-item'>
+      • 需获取您的微信公开信息（昵称，头像等）
+    </view>
+    <view class='get-item'>
+      • 需获取您的地理位置
+    </view>
+    <view class='get-tip'>若您不同意授权，则无法正常使用该小程序，退出即可</view>
+  </view>
+  <view>
+    <button  class='get-userinfo' bindgetuserinfo='selfGetInfo' lang="zh_CN" open-type="getUserInfo">授权登录</button>
+  </view>
+  </view>  
+</view>

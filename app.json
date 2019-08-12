@@ -1,0 +1,45 @@
+{
+  "pages": [
+    "pages/payment/payment",
+    "pages/personalCenter/personalCenter",
+    "pages/login/login",
+    "pages/order/order",
+    "pages/edit/edit",
+    "pages/adress/adress",
+    "pages/index/index",
+    "pages/personalOrder/personalOrder",
+    "pages/map/map",
+    "pages/logs/logs",
+    "pages/shareMessage/shareMessage",
+    "pages/about/about",
+    "pages/disinfectStatus/disinfectStatus"
+  ],
+  "window": {
+    "navigationBarTitleText": "Demo"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "selectedIconPath": "images/icon_tabbar.png",
+        "iconPath": "images/icon_tabbar.png",
+        "pagePath": "pages/map/map",
+        "text": "附近网点"
+      },
+      {
+        "selectedIconPath": "images/icon_tabbar.png",
+        "iconPath": "images/icon_tabbar.png",
+        "pagePath": "pages/personalCenter/personalCenter",
+        "text": "我"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true,
+  "navigateToMiniProgramAppIdList": [
+    "wxf5ba2f38d41555f9"
+  ],
+  "sitemapLocation": "sitemap.json"
+}

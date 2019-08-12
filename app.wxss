@@ -1,0 +1,8 @@
+/**app.wxss**/
+@import 'style/weui.wxss';
+page{
+  background: #efefef;
+}
+.re-text{
+  color: #999;
+}

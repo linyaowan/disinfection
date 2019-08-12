@@ -1,0 +1,38 @@
+<!--pages/personalCenter/personalCenter.wxml-->
+<view class="container">
+  <view class="navigator-box">
+    <view class="navigator" >
+      <view class="navigator-text">头像</view>
+      <view class="userinfo-avatar list-right">
+        <open-data  type="userAvatarUrl"></open-data> 
+      </view>
+    </view>
+    <view class="navigator" >
+      <view class="navigator-text">昵称</view>
+      <open-data type="userNickName" class="userinfo-nickname list-right"></open-data>
+    </view>
+    <view class="navigator" >
+      <view class="navigator-text">用户ID</view>
+      <view class='list-right'>静态12345653</view>
+    </view>
+    <navigator  class="navigator" >
+      <view class="navigator-text">绑定手机</view>
+      <view class="navigator-arrow">静态12345678901</view>
+    </navigator>
+    <navigator  class="navigator" >
+      <view class="navigator-text">性别</view>
+      <view class="navigator-arrow">
+        <open-data  type="userGender" lang="zh_CN"></open-data>
+      </view>
+    </navigator>
+    <navigator  class="navigator" >
+      <view class="navigator-text">地区</view> 
+      <view class="navigator-arrow">    
+        <open-data type="userCity" lang="zh_CN"></open-data>
+      </view>
+    </navigator>
+  </view>
+</view>
+
+
+

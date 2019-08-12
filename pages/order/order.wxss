@@ -1,0 +1,81 @@
+/* pages/order/order.wxss */
+.card-bcg{
+  width:100%;
+  height:560rpx;
+  position: absolute;
+  top: 0rpx;
+  left: 0rpx;
+  z-index: -1;
+
+}
+.order{
+  margin: 30rpx;
+  padding:24rpx 30rpx;
+}
+.order-header-border{
+  /* border-bottom: 1px solid #efefef; */
+  width: 100%;
+  height: 1px;
+  margin: 30rpx 0;
+  background-image: linear-gradient(to right, #ccc 0%, #ccc 50%, transparent 50%);
+  background-size: 30rpx 1px;
+  background-repeat: repeat-x;
+}
+.position{
+  width:20rpx;
+  height:25rpx;
+  margin-right: 6rpx;
+}
+.device-no{
+  font-size: 20rpx;
+  margin-left: 26rpx;
+  color:rgba(0,0,0,0.5);
+}
+.card-info{
+  margin: 30rpx 0;
+  display:flex;
+  align-items:center;
+}
+.card{
+  width: 140rpx;
+  height: 140rpx;
+  margin-right: 20rpx;
+}
+.num{
+  display: inline-block;
+  width: 120rpx;
+  border: 1px solid #efefef;
+  text-align: center
+}
+.oder-num{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.num-group{
+  display: flex;
+  align-items: center;
+}
+.price{
+  text-align: right;
+  height: 50rpx;
+  line-height: 50rpx;
+  margin-top: 28rpx;
+}
+.price-num{
+  display: inline-block;
+  height: 50rpx;
+  line-height: 50rpx;
+  color: #f00;
+  font-size:36rpx;
+  font-weight:500;
+}
+.payfor{
+  width:682rpx;
+  height:100rpx;
+  margin-top: 110rpx;
+  background:rgba(20,111,209,1);
+  color: #fff;
+  box-shadow:0px 0px 40rpx 0px rgba(0,0,0,0.25);
+  border-radius:63rpx;
+}

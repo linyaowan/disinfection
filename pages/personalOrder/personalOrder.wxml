@@ -1,0 +1,72 @@
+<!--pages/personalOrder/personalOrder.wxml--> 
+<view class="container"> 
+  <view class='order re-text'> 
+    <view class='order-header'> 
+        <text class='orderNo'>订单号：190908001</text> 
+        <text class='pay-status pay-status-suceess'>已付款</text> 
+    </view> 
+    <view class='order-content'> 
+      <image class='order-image' src='../../images/timeCard.png'></image> 
+      <view class='order-content-right'>
+        <view class='order-info'>
+          <view class='order-times'>图书消毒 <text>1次</text></view>
+          <view class='station'>厦门市图书馆 </view> 
+          <view class='time'>2019-09-08-01 12:00:00</view>
+          <view class='price pay-status-suceess'>￥1</view>  
+        </view>      
+      </view>      
+    </view> 
+  </view> 
+  <view class='order  re-text'> 
+    <view class='order-header'> 
+        <text>订单号：190908001</text> 
+        <text class='pay-status-wait'>待付款</text> 
+    </view> 
+    <view class='order-content'> 
+      <image class='order-image' src='../../images/timeCard.png'></image> 
+      <view class='order-content-right'>
+        <view class='order-info'>
+          <view class='order-times'>图书消毒 <text>1次</text></view>
+          <view class='station'>厦门市图书馆 </view> 
+          <view class='time'>2019-09-08-01 12:00:00</view>
+          <view class='price pay-status-wait'>￥1</view>  
+        </view>      
+      </view>      
+    </view>  
+    <view class='order-foot'> 
+      <view class='remaining-time'> 
+        <image class='cutdown-img'  src='../../images/cutdown.png'></image> 
+        <text class='cutdown'>剩余：2分39秒</text> 
+      </view> 
+      <view class='order-btn-group'> 
+        <button class='btn-sm'>取消支付</button> 
+        <button class='btn-sm continue'>继续支付</button> 
+      </view> 
+    </view> 
+  </view> 
+  <view class='order re-text'> 
+    <view class='order-header'> 
+        <text>订单号：190908001</text> 
+        <text>已关闭</text> 
+    </view> 
+    <view class='order-content'> 
+      <image class='order-image'  src='../../images/timeCard.png'></image> 
+      <view class='order-content-right'>
+        <view class='order-info'>
+          <view class='order-times'>图书消毒 <text>1次</text></view>
+          <view class='station'>厦门市图书馆 </view> 
+          <view class='time'>2019-09-08-01 12:00:00</view>
+          <view class='price'>￥1</view>  
+        </view>      
+      </view>       
+    </view> 
+    <view class='order-foot'> 
+      <view class='remaining-time'> 
+      </view> 
+      <view class='order-btn-group'> 
+        <button class='btn-sm'>删除订单</button> 
+      </view> 
+    </view> 
+  </view> 
+</view> 
+ 

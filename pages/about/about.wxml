@@ -1,0 +1,13 @@
+<!--pages/about/about.wxml-->
+<view class="container"> 
+  <view class='about'>
+    <view class='about-hearder'>
+      <image src='../../images/info.png' class='logo'></image>
+      <view class='company'>公司名称</view>
+      <view class='version'>版本v.092</view>
+    </view>
+    <view class='about-footer'>
+      copyright@2019-2020 智童时刻 保留所有权
+    </view>
+  </view>
+</view>   

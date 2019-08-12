@@ -1,0 +1,30 @@
+<!--pages/order/order.wxml-->
+<view class="container">
+  <image src='../../images/card-bcg.png' class='card-bcg'></image>
+  <view class='order'>
+    <view class='order-header'>
+      <view>
+        <image class='position' src='../../images/position.png'></image>
+        <text >厦门少儿图书馆</text>
+      </view>
+      <view class='device-no'>设备号：10292992992991</view>     
+      <view class='card-info'>
+        <image class='card' src='../../images/timeCard.png'></image>
+        <text>图书消毒</text>
+      </view>
+    </view>
+    <view class='order-header-border'></view>
+    <view>  
+      <view class='oder-num'>
+        <view class='num-group'>
+          <!-- <button   bindtap="reducenum" data-num="{{num}}">-</button>
+          <input type='number' class="weui-input num" bindinput='changenum' bindchange='changenum'  value='{{num}}'></input>
+          <button   bindtap="addnum" data-num="{{num}}">+</button> -->
+          1 次 x ￥0.01/次     
+        </view>   
+      </view>
+      <view class='price'>实付：<text class='price-num'>￥{{price}}</text></view>
+    </view>
+  </view>
+   <button bindtap="requestPayment" loading="{{loading}}" class='payfor'>立即支付</button>
+</view>

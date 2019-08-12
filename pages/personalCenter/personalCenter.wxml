@@ -1,0 +1,46 @@
+<!--pages/personalCenter/personalCenter.wxml-->
+<view class="container">
+  <view class="userinfo">
+    <view class="userinfo-avatar">
+      <open-data  type="userAvatarUrl"></open-data> 
+    </view>
+    <open-data type="userNickName" class="userinfo-nickname"></open-data>
+  </view>
+  <view class="navigator-box">
+    <navigator  class="navigator" url="../personalOrder/personalOrder">
+      <view class="navigator-text">
+        <image class='list-img' src='../../images/order.png'></image>
+        我的订单
+      </view>
+      <view class="navigator-arrow"></view>
+    </navigator>
+    <navigator  class="navigator" url="../edit/edit">
+      <view class="navigator-text">
+        <image class='list-img' src='../../images/edit.png'></image>
+        编辑资料
+      </view>
+      <view class="navigator-arrow"></view>
+    </navigator>
+    <navigator  class="navigator" url="../shareMessage/shareMessage">
+      <view class="navigator-text">
+        <image class='list-img' src='../../images/share.png'></image>
+        推荐给好友
+      </view>
+      <view class="navigator-arrow"></view>
+    </navigator>
+    <navigator  class="navigator"  url="../about/about">
+      <view class="navigator-text">
+        <image class='list-img list-round' src='../../images/about.png'></image>
+        关于我们
+      </view>
+      <view class="navigator-arrow"></view>
+    </navigator>
+  </view>
+    <navigator open-type="exit" target="miniProgram" class='payfor'>退出小程序</navigator>
+</view>
+<!-- <view class="btn-area">
+  <button type="primary" bindtap="scanCode">扫一扫</button>
+</view> -->
+
+
+
