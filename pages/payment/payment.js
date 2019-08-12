@@ -93,23 +93,10 @@ Page({
     that.setData({
       loading: true,
     })
-    wx.request({
-      url: app.globalData.base+'/push/disinfectInstruction',
-      data: {
-        openId: app.globalData.openId,
-        orderNo: app.globalData.orderNo,
-        mac: app.globalData.mac,
-      },
-      method: 'POST',
-      success: function (res) {
-        that.setData({
-          loading: true,
-        })
-        //测试 消毒推送后的查询
-          wx.redirectTo({
-            url: '/pages/disinfectStatus/disinfectStatus'
-          })
-      }
+    //测试 消毒推送后的查询
+    wx.redirectTo({
+      url: '/pages/disinfectStatus/disinfectStatus'
     })
+   
   }
 })

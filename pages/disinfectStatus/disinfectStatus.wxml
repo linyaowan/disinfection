@@ -1,16 +1,21 @@
 <!--pages/disinfectStatus/disinfectStatus.wxml-->
 <view class="container">
+  <view class='pay-success' wx:if="{{isSuccess==0}}">
+    <image class='order-img' src="../../images/close.png"></image>
+    <view class='order-msg'>
+      <text >{{msg}}</text>      
+    </view>
+  </view>
   <view class='pay-success' wx:if="{{isSuccess==1}}">
-    <image class='order-img' src="../../images/yes.png"></image>
+    <image class='order-img' src="../../images/already.png"></image>
     <view class='order-msg'>
       <text >{{msg}}</text>
     </view>
   </view>
-  <view class='pay-success' wx:if="{{isSuccess==0}}">
-    <image class='order-img' src="../../images/close.png"></image>
+  <view class='pay-success' wx:if="{{isSuccess==2}}">
+    <image class='order-img' src="../../images/loading.png"></image>
     <view class='order-msg'>
       <text >{{msg}}</text>
-      
     </view>
   </view>
 </view>

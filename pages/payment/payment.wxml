@@ -7,7 +7,7 @@
       <text >支付成功</text>
     </view>
     <view class='success-text'>请放置好图书，轻关柜门，欢迎下次使用！</view>
-    <button bindtap="startDisinfect" class='startDisinfect' loading="{{loading}}">开始消毒</button>
+    <button bindtap="startDisinfect" class='startDisinfect' >开始消毒</button>
   </view>
   <view class='pay-wait' wx:elif="{{payStatus==0}}">
     <image class='order-img' src="../../images/info.png"></image>
