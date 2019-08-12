@@ -10,6 +10,7 @@
     <image class='order-img' src="../../images/close.png"></image>
     <view class='order-msg'>
       <text >{{msg}}</text>
+      
     </view>
   </view>
 </view>

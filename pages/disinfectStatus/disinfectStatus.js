@@ -28,6 +28,11 @@ Page({
           that.setData({
             loadingHidden: true,
           })
+          if(!res.data.data){
+            that.setData({
+              msg: '设备未连接上wifi'
+            })
+          }
           var status=res.data.data.status;
           if(status==0){
             that.setData({
@@ -40,16 +45,16 @@ Page({
               msg: '消毒中'
             })
           } else if (status == 7){
-            clearInterval(timerTem);
             that.setData({
               isSuccess: 1,
               msg: '消毒完成'
             })
           }else{
+            clearInterval(timerTem);
             that.setData({
               isSuccess: 0,
             })
-            switch (status) {
+            switch (status) {            
               case 1:
                 that.setData({
                   msg: '设备还未准备好'
@@ -90,10 +95,10 @@ Page({
               default:
                 that.setData({
                   msg: '未知错误'
-                })
+                })            
             }
           }
-
+          
         }
       })
     }, 1000)

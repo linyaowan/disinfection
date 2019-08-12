@@ -20,7 +20,7 @@ Page({
     // 此处需要先调用wx.login方法获取code，然后在服务端调用微信接口使用code换取下单用户的openId
     // 具体文档参考https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-login.html?t=20161230#wxloginobject
     wx.request({
-      url: app.globalData.base + '/api/payInterface',
+      url: app.globalData.base + '/pay/signature',
       data: {
         openId: app.globalData.openId
       },
@@ -38,7 +38,7 @@ Page({
           paySign: payargs.paySign,
           success(res) {
             wx.request({
-              url: app.globalData.base+'/api/saveOrder',
+              url: app.globalData.base +'/order/saveOrUpdate',
               data: {
                 openId: app.globalData.openId,
                 orderNo: orderNo,
@@ -58,7 +58,7 @@ Page({
           },
           fail(res) {
             wx.request({
-              url: app.globalData.base+'/api/saveOrder',
+              url: app.globalData.base +'/order/saveOrUpdate',
               data: {
                 openId: app.globalData.openId,
                 orderNo: orderNo,

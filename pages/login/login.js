@@ -33,7 +33,7 @@ Page({
         })
         // 发送 res.code 到后台换取 openId, sessionKey, unionId
         wx.request({
-          url: app.globalData.base +'/api/getOpenId',
+          url: app.globalData.base +'/user/getOpenId',
           data: {
             code: res.code
           },
